@@ -1,0 +1,39 @@
+{
+  "@@locale": "en",
+  "appTitle": "Play German. 48 Games.",
+  "gameNotFound": "Game not found",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "errorMissingContent": "Content is missing for this language.",
+  "errorInvalidContent": "Content is corrupted or invalid.",
+  "errorDatabase": "Could not save your progress.",
+  "homeTitle": "Play German. 48 Games.",
+  "badgeNew": "NEW",
+  "moreGamesTitle": "New game every month",
+  "moreGamesDescription": "{count} games remaining.",
+  "@moreGamesDescription": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "privacyTitle": "Privacy",
+  "settingsTitle": "Settings",
+  "settingsVersion": "App version",
+  "settingsTheme": "Appearance",
+  "themeModeSystem": "System",
+  "themeModeLight": "Light",
+  "themeModeDark": "Dark",
+  "settingsLevel": "German level",
+  "settingsPrivacy": "Privacy",
+  "settingsDataSources": "Licenses",
+  "settingsLicenses": "Open source licenses",
+  "settingsSourceCode": "Source code",
+  "settingsLinkCopied": "Link copied",
+  "attributionsSectionDataSources": "Data sources",
+  "attributionsSectionLicenses": "Software licenses",
+  "attributionsLanguageLearningDecks": "Language-Learning-decks",
+  "attributionsWordfreq": "wordfreq",
+  "attributionsHowWeAdaptSourceData": "How we adapt source data",
+  "attributionsThirdPartyDependenciesAndLicenses": "Third-party dependencies and licenses"
+}

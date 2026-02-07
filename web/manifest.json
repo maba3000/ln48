@@ -1,0 +1,35 @@
+{
+    "name": "Play German. 48 Games.",
+    "short_name": "Play German",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FFCE00",
+    "theme_color": "#FFCE00",
+    "description": "Play German. 48 language learning games.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

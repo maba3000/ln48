@@ -1,0 +1,54 @@
+{
+  "gameMemoryTitle": "Memory",
+  "gameMemoryDescription": "Flip cards to find matching pairs.",
+  "memoryChangeSize": "Change size",
+  "memorySettings": "Game settings",
+  "memoryInfo": "Game info",
+  "memoryRestart": "Restart",
+  "memoryBoardSize": "Game mode (tiles)",
+  "memoryTileSize": "Tile size",
+  "memoryDisplayTime": "Display time",
+  "memoryDisplayFlips": "Display flips",
+  "memoryTimeLabel": "Time",
+  "memoryFlipsLabel": "Flips",
+  "memoryPairsOption": "{count} tiles",
+  "@memoryPairsOption": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoryNotEnoughWords": "Not enough word pairs to start a game.",
+  "memoryAvailablePairs": "{count} tiles available.",
+  "@memoryAvailablePairs": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoryScoresTitle": "High scores",
+  "memoryScoresTime": "Fastest times",
+  "memoryScoresFlips": "Fewest flips",
+  "memoryScoresEmpty": "No scores yet.",
+  "memoryResultTitle": "Round complete",
+  "memoryResultTime": "Time: {time}",
+  "@memoryResultTime": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "memoryResultFlips": "Flips: {count}",
+  "@memoryResultFlips": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "memoryDialogOk": "OK",
+  "memoryNoCardsFound": "No cards found."
+}

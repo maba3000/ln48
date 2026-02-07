@@ -1,0 +1,17 @@
+name: game_api
+version: 0.1.0
+description: Game feature contract for LN48 games.
+repository: https://github.com/maba3000/ln48
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0

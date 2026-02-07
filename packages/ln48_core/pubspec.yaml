@@ -1,0 +1,30 @@
+name: ln48_core
+version: 0.1.0
+description: Shared domain, data, and UI for LN48.
+repository: https://github.com/maba3000/ln48
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  collection: ^1.18.0
+  drift: ^2.18.0
+  drift_flutter: ^0.2.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.2.0
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  sqlite3_flutter_libs: ^0.5.0
+  url_launcher: ^6.3.0
+
+flutter:
+  uses-material-design: true
+
+dev_dependencies:
+  build_runner: ^2.4.9
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  lints: ^6.1.0

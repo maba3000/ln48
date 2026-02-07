@@ -1,0 +1,58 @@
+name: ln48
+version: 0.1.0+48
+description: Multiplatform language games app
+repository: https://github.com/maba3000/ln48
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  drift: ^2.18.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.2.0
+  game_api:
+    path: packages/game_api
+  game_articles:
+    path: packages/game_articles
+  game_map:
+    path: packages/game_map
+  game_memory:
+    path: packages/game_memory
+  go_router: ^17.0.1
+  intl: ^0.20.2
+  ln48_core:
+    path: packages/ln48_core
+  package_info_plus: ^8.3.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/content/
+    - assets/content/en/german_a1.json
+    - assets/content/en/german_a2.json
+    - assets/content/en/german_b1.json
+    - assets/content/en/german_b2.json
+    - assets/attributions/
+    - assets/attributions/language_learning_decks.md
+    - assets/attributions/wordfreq.md
+    - assets/attributions/source_data_adaptations.md
+    - assets/privacy.md
+
+dev_dependencies:
+  build_runner: ^2.4.9
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  go_router_builder: ^2.9.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true

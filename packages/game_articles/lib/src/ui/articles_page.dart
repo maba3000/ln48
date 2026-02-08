@@ -495,12 +495,16 @@ class _AnswerButton extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
+      backgroundColor: Colors.white,
+      foregroundColor: Colors.black,
+    ).copyWith(
+      overlayColor: const WidgetStatePropertyAll(Colors.transparent),
     );
     final style = isWrong
         ? baseStyle.copyWith(
-            backgroundColor: WidgetStatePropertyAll(scheme.errorContainer),
-            foregroundColor: WidgetStatePropertyAll(scheme.onErrorContainer),
-            side: WidgetStatePropertyAll(BorderSide(color: scheme.error)),
+            backgroundColor: WidgetStatePropertyAll(scheme.primary),
+            foregroundColor: const WidgetStatePropertyAll(Colors.white),
+            side: WidgetStatePropertyAll(BorderSide(color: scheme.primary)),
           )
         : baseStyle;
     return SizedBox(

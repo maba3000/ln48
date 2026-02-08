@@ -36,12 +36,12 @@ final ThemeData appThemeGermanFlag = ThemeData(
     tertiaryContainer: GermanFlagColors.yellowLight,
     onTertiaryContainer: GermanFlagColors.blackLight,
 
-    // Surface: Clean light backgrounds
+    // Surface: Yellow background, white cards
     surfaceContainerLowest: Colors.white,
-    surfaceContainerLow: GermanFlagColors.grayLight,
-    surfaceContainer: GermanFlagColors.yellowLight.withValues(alpha: 0.3),
-    surfaceContainerHigh: GermanFlagColors.yellowLight.withValues(alpha: 0.5),
-    surfaceContainerHighest: GermanFlagColors.yellowLight,
+    surfaceContainerLow: Colors.white,
+    surfaceContainer: Colors.white,
+    surfaceContainerHigh: GermanFlagColors.yellowLight,
+    surfaceContainerHighest: Colors.white,
     onSurfaceVariant: GermanFlagColors.blackLight,
 
     // Outline
@@ -61,8 +61,8 @@ final ThemeData appThemeGermanFlag = ThemeData(
     inversePrimary: GermanFlagColors.yellowDark,
   ),
 
-  // Light yellow scaffold background
-  scaffoldBackgroundColor: GermanFlagColors.yellowLight.withValues(alpha: 0.3),
+  // Solid yellow scaffold background (matches landing page)
+  scaffoldBackgroundColor: GermanFlagColors.yellow,
 
   // Black app bar with yellow text
   appBarTheme: const AppBarTheme(
@@ -72,9 +72,10 @@ final ThemeData appThemeGermanFlag = ThemeData(
     actionsIconTheme: IconThemeData(color: GermanFlagColors.yellow),
   ),
 
-  // Cards with subtle elevation
+  // White cards with subtle elevation (matches landing page)
   cardTheme: const CardThemeData(
     color: Colors.white,
+    elevation: 1,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(12)),
     ),
@@ -148,17 +149,6 @@ final ThemeData appThemeGermanFlag = ThemeData(
   // Icon theme
   iconTheme: const IconThemeData(
     color: GermanFlagColors.blackLight,
-  ),
-);
-
-final appThemeLight = ThemeData(
-  colorScheme: ColorScheme.fromSeed(
-    seedColor: const Color(0xFF0F4C81),
-  ),
-  useMaterial3: true,
-  textTheme: const TextTheme(
-    headlineLarge: TextStyle(fontWeight: FontWeight.w700),
-    titleLarge: TextStyle(fontWeight: FontWeight.w600),
   ),
 );
 

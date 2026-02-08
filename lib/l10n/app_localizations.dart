@@ -97,7 +97,7 @@ abstract class AppLocalizations {
   /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'Play German. 48 Games.'**
+  /// **'Play German 48'**
   String get appTitle;
 
   /// No description provided for @gameNotFound.
@@ -133,7 +133,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeTitle.
   ///
   /// In en, this message translates to:
-  /// **'Play German. 48 Games.'**
+  /// **'Play German 48'**
   String get homeTitle;
 
   /// No description provided for @badgeNew.
@@ -177,18 +177,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Appearance'**
   String get settingsTheme;
-
-  /// No description provided for @themeModeSystem.
-  ///
-  /// In en, this message translates to:
-  /// **'System'**
-  String get themeModeSystem;
-
-  /// No description provided for @themeModeLight.
-  ///
-  /// In en, this message translates to:
-  /// **'Light'**
-  String get themeModeLight;
 
   /// No description provided for @themeModeDark.
   ///

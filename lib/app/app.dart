@@ -15,7 +15,7 @@ class Ln48App extends ConsumerWidget {
     final router = ref.watch(appRouterProvider);
     final localeAsync = ref.watch(localeControllerProvider);
     final themeModeAsync = ref.watch(themeModeControllerProvider);
-    final themeMode = themeModeAsync.asData?.value ?? AppThemeMode.dark;
+    final themeMode = themeModeAsync.asData?.value ?? AppThemeMode.germanFlag;
     final useGermanFlag = themeMode == AppThemeMode.germanFlag;
     final gameDelegates = ref
         .watch(gameRegistryProvider)
@@ -30,9 +30,9 @@ class Ln48App extends ConsumerWidget {
       localizationsDelegates: localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       locale: localeAsync.asData?.value,
-      theme: useGermanFlag ? appThemeGermanFlag : appThemeLight,
+      theme: useGermanFlag ? appThemeGermanFlag : appThemeDark,
       darkTheme: useGermanFlag ? appThemeGermanFlag : appThemeDark,
-      themeMode: useGermanFlag ? ThemeMode.light : themeMode.materialThemeMode,
+      themeMode: themeMode.materialThemeMode,
       routerConfig: router,
     );
   }

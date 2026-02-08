@@ -9,7 +9,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Play German. 48 Games.';
+  String get appTitle => 'Play German 48';
 
   @override
   String get gameNotFound => 'Game not found';
@@ -27,7 +27,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get errorDatabase => 'Could not save your progress.';
 
   @override
-  String get homeTitle => 'Play German. 48 Games.';
+  String get homeTitle => 'Play German 48';
 
   @override
   String get badgeNew => 'NEW';
@@ -51,12 +51,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsTheme => 'Appearance';
-
-  @override
-  String get themeModeSystem => 'System';
-
-  @override
-  String get themeModeLight => 'Light';
 
   @override
   String get themeModeDark => 'Dark';

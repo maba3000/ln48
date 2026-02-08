@@ -5,8 +5,6 @@ import 'package:ln48_core/core/core_providers.dart';
 import 'package:ln48_core/core/settings/settings_keys.dart';
 
 enum AppThemeMode {
-  system,
-  light,
   dark,
   germanFlag,
 }
@@ -14,8 +12,6 @@ enum AppThemeMode {
 extension AppThemeModeX on AppThemeMode {
   ThemeMode get materialThemeMode {
     return switch (this) {
-      AppThemeMode.system => ThemeMode.system,
-      AppThemeMode.light => ThemeMode.light,
       AppThemeMode.dark => ThemeMode.dark,
       AppThemeMode.germanFlag => ThemeMode.light,
     };
@@ -27,7 +23,7 @@ class ThemeModeController extends AsyncNotifier<AppThemeMode> {
   Future<AppThemeMode> build() async {
     final settings = ref.watch(settingsRepositoryProvider);
     final stored = await settings.getString(SettingsKeys.themeMode);
-    return _fromString(stored) ?? AppThemeMode.dark;
+    return _fromString(stored) ?? AppThemeMode.germanFlag;
   }
 
   Future<void> setMode(AppThemeMode mode) async {
@@ -38,10 +34,6 @@ class ThemeModeController extends AsyncNotifier<AppThemeMode> {
 
   AppThemeMode? _fromString(String? value) {
     switch (value) {
-      case 'system':
-        return AppThemeMode.system;
-      case 'light':
-        return AppThemeMode.light;
       case 'dark':
         return AppThemeMode.dark;
       case 'german_flag':
@@ -53,8 +45,6 @@ class ThemeModeController extends AsyncNotifier<AppThemeMode> {
 
   String _toString(AppThemeMode mode) {
     return switch (mode) {
-      AppThemeMode.system => 'system',
-      AppThemeMode.light => 'light',
       AppThemeMode.dark => 'dark',
       AppThemeMode.germanFlag => 'german_flag',
     };

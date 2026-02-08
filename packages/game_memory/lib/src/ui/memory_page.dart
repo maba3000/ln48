@@ -539,19 +539,12 @@ class _MemoryTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final bg = card.isGerman
-        ? theme.colorScheme.primaryContainer
-        : theme.colorScheme.secondaryContainer;
-    final fg = card.isGerman
-        ? theme.colorScheme.onPrimaryContainer
-        : theme.colorScheme.onSecondaryContainer;
-
     return InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(12),
       child: Card(
         elevation: 0,
-        color: isFaceUp ? bg : theme.colorScheme.surfaceContainerHighest,
+        color: isFaceUp ? Colors.white : theme.colorScheme.primary,
         child: Center(
           child: AnimatedSwitcher(
             duration: const Duration(milliseconds: 200),
@@ -563,10 +556,14 @@ class _MemoryTile extends StatelessWidget {
                       textAlign: TextAlign.center,
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
-                      style: theme.textTheme.titleMedium?.copyWith(color: fg),
+                      style: theme.textTheme.titleMedium
+                          ?.copyWith(color: Colors.black),
                     ),
                   )
-                : const Icon(Icons.help_outline),
+                : Icon(
+                    Icons.help_outline,
+                    color: theme.colorScheme.onPrimary,
+                  ),
           ),
         ),
       ),

@@ -17,7 +17,7 @@ class SettingsPage extends ConsumerWidget {
     final l10n = AppLocalizations.of(context)!;
     final themeModeAsync = ref.watch(themeModeControllerProvider);
     final levelsAsync = ref.watch(germanLevelsControllerProvider);
-    final themeMode = themeModeAsync.value ?? AppThemeMode.dark;
+    final themeMode = themeModeAsync.value ?? AppThemeMode.germanFlag;
     return Scaffold(
       appBar: AppBar(
         leading: const BackButton(),
@@ -109,10 +109,8 @@ class _ThemeModeChips extends StatelessWidget {
   final ValueChanged<AppThemeMode> onSelect;
 
   static const List<AppThemeMode> _modes = [
-    AppThemeMode.system,
-    AppThemeMode.dark,
-    AppThemeMode.light,
     AppThemeMode.germanFlag,
+    AppThemeMode.dark,
   ];
 
   @override
@@ -149,10 +147,8 @@ class _ThemeModeChips extends StatelessWidget {
 
   String _labelForMode(AppLocalizations l10n, AppThemeMode mode) {
     return switch (mode) {
-      AppThemeMode.system => l10n.themeModeSystem,
-      AppThemeMode.dark => l10n.themeModeDark,
-      AppThemeMode.light => l10n.themeModeLight,
       AppThemeMode.germanFlag => '🇩🇪',
+      AppThemeMode.dark => l10n.themeModeDark,
     };
   }
 }

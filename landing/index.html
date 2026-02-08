@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Play German. 48 Games. Learn German with fun language games on Android, iOS, and Web.">
+  <meta name="description" content="Learn German with quick, fun language games. Practice articles, vocabulary, and more.">
   <title>Play German 48</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" sizes="192x192" href="app/icons/Icon-192.png">
@@ -34,15 +34,19 @@
       width: 100%;
     }
 
-    .four { color: #000; }
-    .eight { color: #DD0000; }
-    .brand-48 { font-family: "Comic Sans MS", "Comic Sans", cursive; font-size: 1.5em; }
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 24px;
+      margin-bottom: 1.25rem;
+    }
 
     h1 {
-      font-size: clamp(1.8rem, 6vw, 2.5rem);
+      font-size: clamp(1.5rem, 6vw, 2rem);
       font-weight: 700;
       margin-bottom: 1rem;
-      white-space: nowrap;
+      padding: 0 1rem;
+      text-align: center;
     }
 
     .tagline {
@@ -64,7 +68,7 @@
     .platform {
       background: #fff;
       border-radius: 12px;
-      padding: 1.25rem 1.5rem;
+      padding: 1rem 1.5rem;
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -72,23 +76,14 @@
     }
 
     .platform-icon {
-      font-size: 2rem;
+      font-size: 1.5rem;
       flex-shrink: 0;
-      width: 48px;
-      text-align: center;
     }
-
-    .platform-info { flex: 1; }
 
     .platform-name {
       font-weight: 700;
       font-size: 1.05rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .platform-status {
-      font-size: 0.9rem;
-      color: #555;
+      flex: 1;
     }
 
     .badge {
@@ -101,14 +96,14 @@
       flex-shrink: 0;
     }
 
-    .badge-pending {
-      background: #eee;
-      color: #777;
-    }
-
-    .badge-live {
+    .badge-available {
       background: #2E7D32;
       color: #fff;
+    }
+
+    .badge-soon {
+      background: #eee;
+      color: #777;
     }
 
     .platform-link {
@@ -137,7 +132,8 @@
 </head>
 <body>
   <main>
-    <h1>Play German <span class="brand-48"><span class="four">4</span><span class="eight">8</span></span> Games</h1>
+    <img class="logo" src="icon.png" alt="48">
+    <h1>Play German 48 Games</h1>
     <p class="tagline">
       Learn German with quick, fun language games.
       Practice articles, vocabulary, and more.
@@ -145,28 +141,19 @@
 
     <div class="platforms">
       <a class="platform platform-link" href="app/">
-        <div class="platform-icon">&#x1F310;</div>
-        <div class="platform-info">
-          <div class="platform-name">Web</div>
-          <div class="platform-status">Play in your browser. Progress saving is limited.</div>
-        </div>
-        <span class="badge badge-live">Available</span>
+        <span class="platform-icon">&#x1F310;</span>
+        <span class="platform-name">Web</span>
+        <span class="badge badge-available">Available</span>
       </a>
       <div class="platform">
-        <div class="platform-icon">&#x1F4F1;</div>
-        <div class="platform-info">
-          <div class="platform-name">Android</div>
-          <div class="platform-status">Coming soon.</div>
-        </div>
-        <span class="badge badge-pending">Pending</span>
+        <span class="platform-icon">&#x1F4F1;</span>
+        <span class="platform-name">Android</span>
+        <span class="badge badge-soon">Coming soon</span>
       </div>
       <div class="platform">
-        <div class="platform-icon">&#x1F34F;</div>
-        <div class="platform-info">
-          <div class="platform-name">iOS</div>
-          <div class="platform-status">Coming soon.</div>
-        </div>
-        <span class="badge badge-pending">Pending</span>
+        <span class="platform-icon">&#x1F34F;</span>
+        <span class="platform-name">iOS</span>
+        <span class="badge badge-soon">Coming soon</span>
       </div>
     </div>
 

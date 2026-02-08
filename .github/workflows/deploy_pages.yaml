@@ -38,12 +38,7 @@ jobs:
           set -euo pipefail
           make pubget
           make l10n
-          repo_name="${GITHUB_REPOSITORY#*/}"
-          if [[ "$repo_name" == *.github.io ]]; then
-            base_href="/app/"
-          else
-            base_href="/${repo_name}/app/"
-          fi
+          base_href="/app/"
           build_number="$(git rev-list --count HEAD)"
           flutter build web --release --base-href "${base_href}" --build-number "${build_number}"
           mkdir -p site

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play German. 48 Games. Learn German with fun language games on Android, iOS, and Web.">
+  <title>Play German 48</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="app/icons/Icon-192.png">
+  <meta property="og:title" content="Play German 48">
+  <meta property="og:description" content="Learn German with quick, fun language games. Practice articles, vocabulary, and more.">
+  <meta property="og:image" content="app/icons/Icon-512.png">
+  <meta property="og:type" content="website">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #FFCE00;
+      color: #000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+      max-width: 640px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .four { color: #000; }
+    .eight { color: #DD0000; }
+    .brand-48 { font-family: "Comic Sans MS", "Comic Sans", cursive; font-size: 1.5em; }
+
+    h1 {
+      font-size: clamp(1.8rem, 6vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      white-space: nowrap;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+    }
+
+    .platforms {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .platform {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .platform-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+      width: 48px;
+      text-align: center;
+    }
+
+    .platform-info { flex: 1; }
+
+    .platform-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .platform-status {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      flex-shrink: 0;
+    }
+
+    .badge-pending {
+      background: #eee;
+      color: #777;
+    }
+
+    .badge-live {
+      background: #2E7D32;
+      color: #fff;
+    }
+
+    .platform-link {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: box-shadow 0.15s;
+    }
+    .platform-link:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    .footer-link {
+      color: #555;
+      text-decoration: none;
+    }
+    .footer-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Play German <span class="brand-48"><span class="four">4</span><span class="eight">8</span></span> Games</h1>
+    <p class="tagline">
+      Learn German with quick, fun language games.
+      Practice articles, vocabulary, and more.
+    </p>
+
+    <div class="platforms">
+      <a class="platform platform-link" href="app/">
+        <div class="platform-icon">&#x1F310;</div>
+        <div class="platform-info">
+          <div class="platform-name">Web</div>
+          <div class="platform-status">Play in your browser. Progress saving is limited.</div>
+        </div>
+        <span class="badge badge-live">Available</span>
+      </a>
+      <div class="platform">
+        <div class="platform-icon">&#x1F4F1;</div>
+        <div class="platform-info">
+          <div class="platform-name">Android</div>
+          <div class="platform-status">Coming soon.</div>
+        </div>
+        <span class="badge badge-pending">Pending</span>
+      </div>
+      <div class="platform">
+        <div class="platform-icon">&#x1F34F;</div>
+        <div class="platform-info">
+          <div class="platform-name">iOS</div>
+          <div class="platform-status">Coming soon.</div>
+        </div>
+        <span class="badge badge-pending">Pending</span>
+      </div>
+    </div>
+
+  </main>
+  <footer><a class="footer-link" href="https://github.com/maba3000/ln48">Source Code</a></footer>
+</body>
+</html>

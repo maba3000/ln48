@@ -40,14 +40,17 @@ jobs:
           make l10n
           repo_name="${GITHUB_REPOSITORY#*/}"
           if [[ "$repo_name" == *.github.io ]]; then
-            base_href="/"
+            base_href="/app/"
           else
-            base_href="/${repo_name}/"
+            base_href="/${repo_name}/app/"
           fi
           build_number="$(git rev-list --count HEAD)"
           flutter build web --release --base-href "${base_href}" --build-number "${build_number}"
-          cp -R build/web site
-          cp site/index.html site/404.html
+          mkdir -p site
+          cp -R landing/* site/
+          cp -R build/web site/app
+          cp site/app/index.html site/app/404.html
+          cp web/favicon.png site/favicon.png
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

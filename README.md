@@ -1,5 +1,5 @@
 # LN48
 
-Project for practising Flutter and improving my German through interactive games. One new game a month.
+Learn German with quick, fun language games. Practice articles, vocabulary, and more.
 
 [Try the latest build](https://maba3000.github.io/ln48/)

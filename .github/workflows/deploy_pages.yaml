@@ -39,8 +39,7 @@ jobs:
           make pubget
           make l10n
           base_href="/app/"
-          build_number="$(git rev-list --count HEAD)"
-          flutter build web --release --base-href "${base_href}" --build-number "${build_number}"
+          flutter build web --release --base-href "${base_href}"
           mkdir -p site
           cp -R landing/* site/
           cp -R build/web site/app

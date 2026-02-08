@@ -202,8 +202,7 @@ class _AppVersionText extends StatelessWidget {
           return const Text('-');
         }
         final info = snapshot.data!;
-        final fullVersion = '${info.version}+${info.buildNumber}';
-        return Text(fullVersion);
+        return Text(info.version);
       },
     );
   }
